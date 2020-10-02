@@ -68,6 +68,7 @@ function addItemToList(item) {
 function removeItemFromList(target) {
     target.parentNode.parentNode.remove()
 }
+
 function setTodoIndices(indexList) {
     for (let index = 0; index < indexList.length; index++) {
         indexList[index].innerText = index + 1;
@@ -166,6 +167,7 @@ form.addEventListener('submit', function (event) {
     
     const placeHolderRow =  document.querySelector('#placeholder-row')
     removePlaceHolder(placeHolderRow)
+
     const newTodo = createItem(newItem.value)
     addItemToList(newTodo)
     updateStoredItems({
@@ -173,6 +175,7 @@ form.addEventListener('submit', function (event) {
         value: newItem.value,
         isDone: false
     })
+
     form.reset()
     const todoIndices =  document.querySelectorAll('tr td:nth-child(1)')
     setTodoIndices(todoIndices)
