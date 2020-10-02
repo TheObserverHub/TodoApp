@@ -1,0 +1,66 @@
+body {
+ width: 600px;
+ height: 1000px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ background-color: rgb(253, 253, 255)
+}
+main {
+    margin-left: 20px;
+}
+table {
+    margin-top: 10px;
+}
+thead {
+    background-color: rgb(57, 61, 63);
+    color: rgb(253, 253, 255);
+    border-radius: 10px;
+}
+tbody {
+    background-color: rgb(57, 61, 63);
+    color:  rgb(253, 253, 255);
+    border-radius: 10px;
+    width: 490px;
+    transition: all 1s; 
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(67, 72, 76);
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+td, th {
+    padding: 20px;
+}
+th:nth-child(2) {
+    width: 200px;
+}
+
+td:nth-child(2) {
+    width: 200px;
+}
+
+td button {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+table a {
+    text-decoration: none;
+    color: rgb(253, 253, 255);;
+}
